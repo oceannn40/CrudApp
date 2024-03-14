@@ -1,0 +1,32 @@
+POST http://localhost:8000/api/create 
+Content-Type: application/json
+
+{
+  "fname": "Siddhant",
+  "lname": "Kapoor",
+  "email": "s@gmail.com",
+  "password":"789"
+}
+
+###
+
+GET http://localhost:8000/api/getAll 
+
+
+###
+
+GET http://localhost:8000/api/getOne/6520f4fbfa48408cdf913cc7 
+
+###
+
+PUT http://localhost:8000/api/update/6520f4fbfa48408cdf913cc7
+Content-Type: application/json
+
+{
+  "fname": "Random",
+  "email": "pqr@gmail.com"
+}
+
+### 
+
+DELETE http://localhost:8000/api/delete/6520f4fbfa48408cdf913cc7 
